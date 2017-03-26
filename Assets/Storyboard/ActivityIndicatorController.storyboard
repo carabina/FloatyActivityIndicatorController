@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sZZ-YO-c9j">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activity Indicator Controller-->
+        <scene sceneID="cUK-HH-8i3">
+            <objects>
+                <viewController id="sZZ-YO-c9j" customClass="ActivityIndicatorController" customModule="ActivityIndicatorController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hK3-uE-is4"/>
+                        <viewControllerLayoutGuide type="bottom" id="q1I-fK-LfY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c9j-30-L2O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIk-cG-pfb">
+                                <rect key="frame" x="147" y="294" width="80" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="485-8w-4dX" customClass="ActivityIndicatorView" customModule="ActivityIndicatorController">
+                                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="NmI-ml-Zy2"/>
+                                            <constraint firstAttribute="height" constant="50" id="gu6-IR-8SX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ZQ5-Si-xJA"/>
+                                    <constraint firstItem="485-8w-4dX" firstAttribute="centerY" secondItem="nIk-cG-pfb" secondAttribute="centerY" id="aNC-lt-3Wf"/>
+                                    <constraint firstItem="485-8w-4dX" firstAttribute="centerX" secondItem="nIk-cG-pfb" secondAttribute="centerX" id="czZ-Gl-QiD"/>
+                                    <constraint firstAttribute="height" constant="80" id="knt-lf-FXe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nIk-cG-pfb" firstAttribute="centerX" secondItem="c9j-30-L2O" secondAttribute="centerX" id="0WO-kx-fFn"/>
+                            <constraint firstItem="nIk-cG-pfb" firstAttribute="centerY" secondItem="c9j-30-L2O" secondAttribute="centerY" id="ZVa-FG-NRK"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="485-8w-4dX" id="49X-Xt-yCt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AyY-KI-hsu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="430"/>
+        </scene>
+    </scenes>
+</document>
