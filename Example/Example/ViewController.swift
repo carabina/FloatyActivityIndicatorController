@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ActivityIndicatorController
+import FloatyActivityIndicatorController
 
 class ViewController: UIViewController {
     
